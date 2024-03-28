@@ -10,6 +10,7 @@ import argparse
 def arg_parser():
     parser = argparse.ArgumentParser()
     parser.add_argument('--data_dir', type=str, default='data')
+    parser.add_argument('--config', type=str, default='config')
     parser.add_argument('--batch_size', type=int, default=64)
     parser.add_argument('--lr', type=float, default=0.001)
     parser.add_argument('--epochs', type=int, default=10)
